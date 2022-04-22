@@ -11,7 +11,7 @@ body {
 	background-position: center;
 }
 .wooden-frame {
-	border-width: 20;
+	border-width: 20px;
 	border-style: solid;
 	border-color: orange;
 	box-shadow: 0px 0px 7px 2px #00000088;
@@ -19,7 +19,7 @@ body {
 	border-image: url("/static/img/wood-texture.png") 20 round;
 }
 .wooden-frame-thin {
-	border-width: 10;
+	border-width: 10px;
 	border-style: solid;
 	border-color: orange;
 	box-shadow: 0px 0px 7px 2px #00000088;
@@ -27,14 +27,14 @@ body {
 	border-image: url("/static/img/wood-texture.png") 10 round;
 }
 #header {
-	margin-left: 200;
-	margin-right: 200;
+	margin-left: 200px;
+	margin-right: 200px;
 	display: flex;
 	justify-content: space-between;
 }
 #footer {
-	margin-left: 200;
-	margin-right: 200;
+	margin-left: 200px;
+	margin-right: 200px;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'Times New Roman', Times, serif;
@@ -42,26 +42,38 @@ body {
 }
 #content {
 	position: relative;
-	top: -20;
-	z-index: -1;
-	margin-left: 200;
-	margin-right: 200;
+	top: -20px;
+	margin-left: 200px;
+	margin-right: 200px;
 	margin-top: auto;
-	padding: 20;
+	padding: 20px;
+	min-height: 500px;
 
 	background-color: var(--wood-bg);
 }
 #menu {
-	margin-left: 180;
-	margin-right: 180;
-	height: 50;
+	position: relative;
+	margin-left: 180px;
+	margin-right: 180px;
+	height: 50px;
+	z-index: 1;
 	background-color: var(--wood-bg);
 	display: flex;
 	justify-content: space-between;
 }
+div.txt-wrap-left {
+	float: left;
+	margin: 10px;
+	margin-left: 0px;
+}
+div.txt-wrap-right {
+	float: right;
+	margin: 10px;
+	margin-right: 0px;
+}
 .footer-links img {
-	width: 32;
-	height: 32;
+	width: 32px;
+	height: 32px;
 }
 
 .link-like {
@@ -86,12 +98,12 @@ body {
 }
 .menu-dropdown-content {
 	display: none;
-	left: -10;
+	left: -10px;
 	position: absolute;
 	background-color: var(--wood-bg);
-	min-width: 200;
+	min-width: 200px;
 	z-index: 1;
-	padding: 10;
+	padding: 10px;
 }
 .menu-dropdown:hover .menu-dropdown-content {
 	display: block;
