@@ -15,7 +15,7 @@ body {
 	border-style: solid;
 	border-color: orange;
 	box-shadow: 0px 0px 7px 2px #00000088;
-
+	
 	border-image: url("/static/img/wood-texture.png") 20 round;
 }
 .wooden-frame-thin {
@@ -27,34 +27,41 @@ body {
 	border-image: url("/static/img/wood-texture.png") 10 round;
 }
 #header {
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
 	display: flex;
 	justify-content: space-between;
 }
 #footer {
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'Times New Roman', Times, serif;
 	overflow: hidden;
 }
+#global-container {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 600px;
+}
 #content {
 	position: relative;
 	top: -20px;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 40px;
+	margin-right: 40px;
 	margin-top: auto;
 	padding: 20px;
 	min-height: 500px;
+	/* min-width: 800px; */
 
 	background-color: var(--wood-bg);
 }
 #menu {
 	position: relative;
-	margin-left: 180px;
-	margin-right: 180px;
+	margin-left: 20px;
+	margin-right: 20px;
 	height: 50px;
 	z-index: 1;
 	background-color: var(--wood-bg);
