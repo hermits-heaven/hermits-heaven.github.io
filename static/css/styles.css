@@ -22,7 +22,7 @@ body {
 	border-width: 10px;
 	border-style: solid;
 	border-color: orange;
-	box-shadow: 0px 0px 7px 2px #00000088;
+	box-shadow: 0px 0px 7px 2px #00000066;
 
 	border-image: url("/static/img/wood-texture.png") 10 round;
 }
@@ -91,12 +91,12 @@ div.txt-wrap-right {
 }
 .menu-item {
 	margin: auto;
-	font-size: 20;
+	font-size: 20px;
 	color: var(--wood-fg);
 	text-decoration: none;
 }
 .submenu-item {
-	font-size: 16;
+	font-size: 16px;
 	color: var(--wood-fg);
 }
 .menu-dropdown {
@@ -111,7 +111,39 @@ div.txt-wrap-right {
 	min-width: 200px;
 	z-index: 1;
 	padding: 10px;
+	padding-left: 27px;
 }
 .menu-dropdown:hover .menu-dropdown-content {
 	display: block;
+}
+div.tilegrid {
+	display: grid;
+	margin: auto;
+	grid-template-columns: 50% 50%;
+	max-width: 800px;
+}
+.tilegrid-item {
+	display: block;
+	margin: 10px;
+}
+.tilegrid-item-cover {
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	position: relative;
+	z-index: 1;
+}
+.tilegrid-item-desc {
+	position: relative; 
+	text-align: center;	
+	top: -10px;
+	padding: 10px;
+}
+.tilegrid-item-desc a {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 16px;
 }
