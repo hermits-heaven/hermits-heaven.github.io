@@ -139,7 +139,9 @@ div.tilegrid {
 	position: relative; 
 	text-align: center;	
 	top: -10px;
-	padding: 10px;
+	padding: 5px;
+	width: 50%;
+	margin: auto;
 }
 .tilegrid-item-desc a {
 	margin-left: auto;
